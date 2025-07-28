@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://martinfantinelli.github.io/martindev/sitemap.xml
+Sitemap: https://martinfantinelli.dev/sitemap.xml
