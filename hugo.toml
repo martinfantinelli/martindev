@@ -1,6 +1,6 @@
 baseURL = 'https://martinfantinelli.dev/'
 languageCode = 'en-us'
-title = "Martin Fantinelli's website"
+title = "Martin Dev"
 copyright = 'Martin Fantinelli'                  # Used in the footer copyright mention.
 enableRobotsTXT = true                           # IMPORTANT: set to true if you want to use the theme's genAI/LLM web crawler blocking feature.
 theme = "github.com/michenriksen/hugo-theme-til"
