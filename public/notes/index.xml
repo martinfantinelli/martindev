@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Martin Fantinelli&#39;s website</title>
+    <link>https://martin.dev/notes/</link>
+    <description>Recent content in Notes on Martin Fantinelli&#39;s website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>martinsfantinelli@gmail.com (Martin Fantinelli)</managingEditor>
+    <webMaster>martinsfantinelli@gmail.com (Martin Fantinelli)</webMaster>
+    <copyright>Martin Fantinelli</copyright>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://martin.dev/notes/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

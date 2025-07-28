@@ -1,0 +1,6 @@
+[submodule "hugo-theme-til"]
+	path = hugo-theme-til
+	url = https://github.com/michenriksen/hugo-theme-til
+[submodule "martindev"]
+	path = martindev
+	url = https://github.com/martinfantinelli/martindev.git
