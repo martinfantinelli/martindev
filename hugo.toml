@@ -1,8 +1,8 @@
-baseURL = 'https://martin.dev/'
+baseURL = 'https://martinfantinelli.github.io/martindev/'
 languageCode = 'en-us'
 title = "Martin Fantinelli's website"
-copyright = 'Martin Fantinelli'                  # Used in the footer copyright mention.
-enableRobotsTXT = true                           # IMPORTANT: set to true if you want to use the theme's genAI/LLM web crawler blocking feature.
+copyright = 'Martin Fantinelli'                           # Used in the footer copyright mention.
+enableRobotsTXT = true                                    # IMPORTANT: set to true if you want to use the theme's genAI/LLM web crawler blocking feature.
 theme = "github.com/michenriksen/hugo-theme-til"
 [module]
 [[module.imports]]

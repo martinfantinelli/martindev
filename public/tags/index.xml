@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Martin Fantinelli&#39;s website</title>
-    <link>https://martin.dev/tags/</link>
+    <link>https://martinfantinelli.github.io/martindev/tags/</link>
     <description>Recent content in Tags on Martin Fantinelli&#39;s website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>martinsfantinelli@gmail.com (Martin Fantinelli)</managingEditor>
     <webMaster>martinsfantinelli@gmail.com (Martin Fantinelli)</webMaster>
     <copyright>Martin Fantinelli</copyright>
-    <atom:link href="https://martin.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://martinfantinelli.github.io/martindev/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

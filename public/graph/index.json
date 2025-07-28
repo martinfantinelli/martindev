@@ -1,13 +1,13 @@
 {
   "graph": {
-    "/posts/my-first-post/": {
+    "/martindev/posts/my-first-post/": {
       "in": [],
       "out": []
     }
   },
   "pages": {
-    "/posts/my-first-post/": {
-      "permalink": "/posts/my-first-post/",
+    "/martindev/posts/my-first-post/": {
+      "permalink": "/martindev/posts/my-first-post/",
       "section": "posts",
       "title": "Who Am I"
     }
