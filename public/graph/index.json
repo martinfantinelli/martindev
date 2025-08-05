@@ -1,11 +1,20 @@
 {
   "graph": {
+    "/posts/heap-vs-stack/": {
+      "in": [],
+      "out": []
+    },
     "/posts/my-first-post/": {
       "in": [],
       "out": []
     }
   },
   "pages": {
+    "/posts/heap-vs-stack/": {
+      "permalink": "/posts/heap-vs-stack/",
+      "section": "posts",
+      "title": "Heap vs Stack"
+    },
     "/posts/my-first-post/": {
       "permalink": "/posts/my-first-post/",
       "section": "posts",

@@ -1,0 +1,324 @@
+<!doctype html>
+<html
+  lang="en-us"
+  dir="ltr"
+>
+  <head>
+    <meta charset="utf-8" />
+<meta name="language" content="en" />
+<meta name="viewport" content="width=device-width" />
+<title>
+    Heap vs Stack | Martin Dev
+</title>
+  <meta name="description" content="Heap vs Stack What is “The Heap”? The Heap is commonly used for allocating memory for objects, arrays, and other data structures that require a flexible size during program execution. It is particularly useful in scenarios where the size of the data is not known beforehand or may change during the program’s runtime. Examples include dynamically sized arrays, linked lists, and instances of classes in object-oriented programming.
+Heap memory refers to a region of a computer’s memory used for dynamic memory allocation." />
+<meta property="og:title" content="Heap vs Stack" />
+<meta property="og:description" content="Heap vs Stack What is &ldquo;The Heap&rdquo;? The Heap is commonly used for allocating memory for objects, arrays, and other data structures that require a flexible size during program execution. It is particularly useful in scenarios where the size of the data is not known beforehand or may change during the program&rsquo;s runtime. Examples include dynamically sized arrays, linked lists, and instances of classes in object-oriented programming.
+Heap memory refers to a region of a computer&rsquo;s memory used for dynamic memory allocation." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://martinfantinelli.dev/posts/heap-vs-stack/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-08-05T16:54:10-03:00" />
+<meta property="article:modified_time" content="2025-08-05T16:54:10-03:00" />
+
+
+<meta itemprop="name" content="Heap vs Stack">
+<meta itemprop="description" content="Heap vs Stack What is &ldquo;The Heap&rdquo;? The Heap is commonly used for allocating memory for objects, arrays, and other data structures that require a flexible size during program execution. It is particularly useful in scenarios where the size of the data is not known beforehand or may change during the program&rsquo;s runtime. Examples include dynamically sized arrays, linked lists, and instances of classes in object-oriented programming.
+Heap memory refers to a region of a computer&rsquo;s memory used for dynamic memory allocation."><meta itemprop="datePublished" content="2025-08-05T16:54:10-03:00" />
+<meta itemprop="dateModified" content="2025-08-05T16:54:10-03:00" />
+<meta itemprop="wordCount" content="658">
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Heap vs Stack"/>
+<meta name="twitter:description" content="Heap vs Stack What is &ldquo;The Heap&rdquo;? The Heap is commonly used for allocating memory for objects, arrays, and other data structures that require a flexible size during program execution. It is particularly useful in scenarios where the size of the data is not known beforehand or may change during the program&rsquo;s runtime. Examples include dynamically sized arrays, linked lists, and instances of classes in object-oriented programming.
+Heap memory refers to a region of a computer&rsquo;s memory used for dynamic memory allocation."/>
+
+<link rel="canonical" href="https://martinfantinelli.dev/posts/heap-vs-stack/" />
+
+      <link
+        rel="stylesheet"
+        href="/css/index.min.7dc5bce5e48ff3fe71c582eac851646db39f1a70e9dc6198c199a3189731869e.css"
+        integrity="sha256-fcW85eSP8/5xxYLqyFFkbbOfGnDp3GGYwZmjGJcxhp4="
+        crossorigin="anonymous"
+      />
+
+
+      <script
+        src="/js/main.599d0f4a62d5f40bbe81732b02370e382a0294890e373a7d2a1dcca9b850f305.js"
+        integrity="sha256-WZ0PSmLV9Au&#43;gXMrAjcOOCoClIkONzp9Kh3MqbhQ8wU="
+        crossorigin="anonymous"
+        defer
+      ></script>
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@id": "https://martinfantinelli.dev/posts/heap-vs-stack/",
+  "@type": "BlogPosting",
+  "author": {
+    "@type": "Person",
+    "email": "martinsfantinelli@gmail.com",
+    "name": "Martin Fantinelli"
+  },
+  "copyrightNotice": "Martin Fantinelli",
+  "datePublished": "2025-08-05",
+  "description": "Heap vs Stack What is “The Heap”? The Heap is commonly used for allocating memory for objects, arrays, and other data structures that require a flexible size during program execution. It is particularly useful in scenarios where the size of the data is not known beforehand or may change during the program’s runtime. Examples include dynamically sized arrays, linked lists, and instances of classes in object-oriented programming.\nHeap memory refers to a region of a computer’s memory used for dynamic memory allocation.",
+  "headline": "Heap vs Stack",
+  "isPartOf": {
+    "@id": "https://martinfantinelli.dev/posts/",
+    "@type": "Blog",
+    "name": "Posts"
+  },
+  "mainEntityOfPage": "https://martinfantinelli.dev/posts/heap-vs-stack/",
+  "name": "Heap vs Stack",
+  "timeRequired": "PT4M",
+  "url": "https://martinfantinelli.dev/posts/heap-vs-stack/",
+  "wordCount": 658
+}
+</script>
+
+
+  </head>
+  <body>
+    <div class="container mx-auto flex max-w-prose flex-col space-y-10 p-4 md:p-6">
+      <header class="flex flex-row items-center justify-between">
+        <div>
+  <a id="skip-nav" class="sr-only" href="#maincontent">Skip to main content</a>
+  <a class="font-semibold" href="/">Martin Dev</a>
+</div>
+
+  <nav>
+    <ul class="flex flex-row items-center justify-end space-x-4">
+    <li>
+      <a href="/notes/">Notes</a
+      >
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/posts/">Posts</a
+      >
+    </li>
+    <li>
+      <a href="/graph/">Graph</a
+      >
+    </li>
+    </ul>
+  </nav>
+
+
+      </header>
+      <main class="prose prose-slate relative md:prose-lg prose-h1:text-[2em]" id="maincontent">
+        <article class="main">
+    <header>
+      <h1 class="!mb-1">Heap vs Stack</h1><div class="flex flex-row items-center space-x-4">
+          <time class="text-sm italic opacity-80" datetime="2025-08-05T16:54:10-03:00"
+            >August 5, 2025</time
+          >
+        </div>
+    </header>
+
+    <h2 id="heap-vs-stack" class="scroll-mt-8 group">
+  Heap vs Stack
+  
+    <a href="#heap-vs-stack"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h2>
+<h3 id="what-is-the-heap" class="scroll-mt-8 group">
+  <strong>What is &ldquo;The Heap&rdquo;?</strong>
+  
+    <a href="#what-is-the-heap"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<p><img src="/images/heap.jpg" alt="Heap Memory Illustration"></p>
+<p>The Heap is commonly used for allocating memory for objects, arrays, and other data structures that require a flexible size during program execution. It is particularly useful in scenarios where the size of the data is not known beforehand or may change during the program&rsquo;s runtime. Examples include dynamically sized arrays, linked lists, and instances of classes in object-oriented programming.</p>
+<p>Heap memory refers to a region of a computer&rsquo;s memory used for dynamic memory allocation. Unlike stack memory, which has a fixed size and follows a last-in, first-out (LIFO) order, heap memory allows for more flexible allocation and deallocation of memory blocks during runtime. This flexibility is essential for programs that need to manage large amounts of data or data structures whose sizes are not known in advance.</p>
+<h3 id="so-what-about-the-stack" class="scroll-mt-8 group">
+  <strong>So what about &ldquo;The Stack&rdquo;?</strong>
+  
+    <a href="#so-what-about-the-stack"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<p><img src="/images/stack.jpg" alt="Stack Memory Illustration"></p>
+<p>While the Stack is a segment of memory that stores temporary variables created by a function. In stack, variables are declared, stored and initialized during runtime.</p>
+<p>Every time a function is called, the machine allocates some stack memory for it. When a new local variables is declared, more stack memory is allocated for that function to store the variable. Such allocations make the stack grow downwards. After the function returns, the stack memory of this function is deallocated, which means all local variables become invalid. The allocation and deallocation for stack memory is automatically done. The variables allocated on the stack are called stack variables, or automatic variables.</p>
+<p>Imagine you’re at a party with two ways to grab snacks:</p>
+<p>The Stack is like a neat tower of plates. Each time you take a plate (push), it goes on top, and when you’re done, you remove the top plate first (pop). It’s quick and organized, but there’s a catch—the tower can only get so tall. If you pile too many plates, the whole thing crashes (stack overflow!). This is how your program handles quick, small tasks (like counting to 10 or calling a function). Fast, but no room for mess.</p>
+<p>The Heap, though, is like the party’s snack buffet. You can grab any dish (memory) in any size—a tiny cookie or a whole pizza—and keep it as long as you want. But here’s the rule: you must throw away your own trash. If you leave plates lying around (forgetting to free memory), the buffet table gets cluttered, snacks run out (memory leaks!), and eventually, the party crashes (out of memory!). This is where big, flexible data lives (like loading a giant game level). Powerful, but you must clean up.</p>
+<p>Fortunately we have some &ldquo;automagic&rdquo; help when using some language(it depends on which one you are using)
+In C, you manually allocate memory (malloc) and must free it yourself (free). Forget? Memory leaks. Free too soon? Crash.
+Java uses a garbage collector (GC) that automatically frees unused heap memory. You just create objects (new), and the GC silently cleans up when they’re no longer needed. No manual work, but you sacrifice a tiny bit of speed for convenience.
+Rust doesn’t need a garbage collector. Instead, its compiler enforces strict rules: memory is freed automatically when a variable goes out of scope, but it won’t compile if you try to misuse it. It’s like a fridge that locks itself if you leave leftovers too long—safe, fast, but you must follow its rules.</p>
+<p>The big difference?</p>
+<p>-The stack is your tidy, auto-cleaning plate tower (small, fast, but fragile).</p>
+<p>-The heap is the wild buffet (huge and flexible, but you manage the mess).</p>
+<p><img src="/images/heapstack.png" alt="Memory management Illustration"></p>
+<p>Knowing these differences helps you optimize memory usage, debug crashes (like out-of-memory errors), and choose the right approach—whether you&rsquo;re squeezing performance from a game engine, scaling a web service, or building safety-critical systems. Essentially, memory awareness separates engineers who write &ldquo;working code&rdquo; from those who craft efficient, robust solutions.</p>
+<h2 id="references" class="scroll-mt-8 group">
+  References
+  
+    <a href="#references"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h2>
+<p><a href="https://www.daily.co/blog/introduction-to-memory-management-in-node-js-applications/#">Memory management in NodeJS</a></p>
+<p><a href="https://medium.com/@lsltry404/memory-usage-in-c-programming-a-comprehensive-guide-b20038647992">Memory management in C</a></p>
+<p><a href="https://medium.com/@cicerohellmann/understanding-memory-management-in-rust-a-comparative-insight-with-c-and-java-kotlin-0b2102020ae7">Memory management in Rust</a></p>
+<p><a href="https://medium.com/@3eid/deep-dive-into-java-memory-management-heap-stack-metaspace-and-garbage-collection-df6548fe6860">Memory management in Java</a></p>
+<h2 id="thank-you-for-reading" class="scroll-mt-8 group">
+  Thank you for reading!
+  
+    <a href="#thank-you-for-reading"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h2>
+<p><img src="/images/frieren.jpeg" alt="Frieren"></p>
+
+  </article>
+    <aside class="not-prose flex flex-col space-y-8 border-t pt-6">
+    <section class="flex flex-col space-y-4" aria-hidden="true">
+      <h2 class="flex flex-row items-center space-x-2 text-lg font-semibold">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-chart-network h-4 w-4"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path
+    d="m13.11 7.664 1.78 2.672M14.162 12.788l-3.324 1.424M20 4l-6.06 1.515M3 3v16a2 2 0 0 0 2 2h16"
+  />
+  <circle cx="12" cy="6" r="2" />
+  <circle cx="16" cy="12" r="2" />
+  <circle cx="9" cy="15" r="2" />
+</svg>
+
+        <span>Graph</span>
+      </h2>
+
+      <content-network-graph
+  class="h-64 ml-6"
+  data-endpoint="/graph/index.json"
+  page="/posts/heap-vs-stack/"
+></content-network-graph>
+
+    </section>
+</aside>
+
+
+      </main>
+      <footer class="mt-20 border-t border-neutral-100 pt-2 text-xs">
+        <section class="items-top flex flex-row justify-between opacity-70">
+  <div class="flex flex-col space-y-2">
+      <p>Copyright &copy; 2025, Martin Fantinelli.</p>
+
+  </div>
+    <div>
+      <a
+        href="https://github.com/michenriksen/hugo-theme-til"
+        title="Today I Learned &#8212; A Hugo theme by Michael Henriksen"
+        data-theme-version="0.6.0"
+        >theme: til</a
+      >
+    </div>
+</section>
+
+      </footer>
+    </div>
+    
+  </body>
+</html>
