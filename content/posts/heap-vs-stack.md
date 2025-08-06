@@ -4,8 +4,6 @@ draft = false
 title = 'Heap vs Stack'
 +++
 
-# Heap vs Stack
-
 ## **What is "The Heap"?**
 
 ![Heap Memory Illustration](/images/heap.jpg)
