@@ -1,0 +1,28 @@
+<header class="flex flex-row items-center justify-between">
+  <div>
+    <a id="skip-nav" class="sr-only" href="#maincontent">Skip to main content</a>
+    <a class="font-semibold" href="/">{{ .Site.Title }}</a>
+  </div>
+
+  <div class="flex items-center space-x-4">
+    <nav>
+      <ul class="flex flex-row items-center justify-end space-x-4">
+        {{ range .Site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+    
+    <div class="flex items-center space-x-2">
+      <button id="theme-toggle" class="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" title="Toggle theme">
+        <span id="theme-icon">🌙</span>
+      </button>
+      
+      <button id="lang-toggle" class="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-sm font-medium" title="Toggle language">
+        <span id="lang-text">EN</span>
+      </button>
+    </div>
+  </div>
+</header>

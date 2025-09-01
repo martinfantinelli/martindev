@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}" dir="ltr">
+  <head>
+    {{ block "head" . }}{{ partial "head.html" . }}{{ end }}
+    <link rel="stylesheet" href="/css/theme-switcher.css" />
+  </head>
+  <body>
+    <div class="container mx-auto flex max-w-prose flex-col space-y-10 p-4 md:p-6">
+      {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
+      
+      <main class="prose prose-slate relative md:prose-lg prose-h1:text-[2em]" id="maincontent">
+        {{ block "main" . }}{{ end }}
+      </main>
+      
+      {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
+    </div>
+    
+    <script src="/js/theme-lang-switcher.js"></script>
+    {{ block "scripts" . }}{{ end }}
+  </body>
+</html>

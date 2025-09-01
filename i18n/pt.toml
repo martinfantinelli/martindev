@@ -1,0 +1,13 @@
+[navigation]
+notes = "Notas"
+posts = "Posts"
+graph = "Grafo"
+
+[common]
+recent_posts = "Posts recentes"
+recent_notes = "Notas recentes"
+read_more = "Leia mais"
+published = "Publicado"
+updated = "Atualizado"
+categories = "Categorias"
+tags = "Tags"
