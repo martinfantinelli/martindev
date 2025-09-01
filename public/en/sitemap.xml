@@ -2,98 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://martinfantinelli.dev/posts/build-in-public1/</loc>
+    <loc>http://localhost:1313/posts/build-in-public1/</loc>
     <lastmod>2025-09-01T16:50:23-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://martinfantinelli.dev/pt/posts/build-in-public1/"
+                href="http://localhost:1313/pt/posts/build-in-public1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://martinfantinelli.dev/posts/build-in-public1/"
+                href="http://localhost:1313/posts/build-in-public1/"
                 />
   </url><url>
-    <loc>https://martinfantinelli.dev/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-09-01T16:50:23-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://martinfantinelli.dev/pt/"
+                href="http://localhost:1313/pt/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://martinfantinelli.dev/"
+                href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>https://martinfantinelli.dev/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-09-01T16:50:23-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://martinfantinelli.dev/pt/posts/"
+                href="http://localhost:1313/pt/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://martinfantinelli.dev/posts/"
+                href="http://localhost:1313/posts/"
                 />
   </url><url>
-    <loc>https://martinfantinelli.dev/posts/heap-vs-stack/</loc>
+    <loc>http://localhost:1313/posts/heap-vs-stack/</loc>
     <lastmod>2025-08-05T16:54:10-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://martinfantinelli.dev/pt/posts/heap-vs-stack/"
+                href="http://localhost:1313/pt/posts/heap-vs-stack/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://martinfantinelli.dev/posts/heap-vs-stack/"
+                href="http://localhost:1313/posts/heap-vs-stack/"
                 />
   </url><url>
-    <loc>https://martinfantinelli.dev/notes/</loc>
+    <loc>http://localhost:1313/notes/</loc>
     <lastmod>2025-07-27T16:16:31-03:00</lastmod>
   </url><url>
-    <loc>https://martinfantinelli.dev/posts/my-first-post/</loc>
+    <loc>http://localhost:1313/posts/my-first-post/</loc>
     <lastmod>2025-07-27T16:16:31-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://martinfantinelli.dev/pt/posts/my-first-post/"
+                href="http://localhost:1313/pt/posts/my-first-post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://martinfantinelli.dev/posts/my-first-post/"
+                href="http://localhost:1313/posts/my-first-post/"
                 />
   </url><url>
-    <loc>https://martinfantinelli.dev/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://martinfantinelli.dev/pt/categories/"
+                href="http://localhost:1313/pt/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://martinfantinelli.dev/categories/"
+                href="http://localhost:1313/categories/"
                 />
   </url><url>
-    <loc>https://martinfantinelli.dev/graph/</loc>
+    <loc>http://localhost:1313/graph/</loc>
   </url><url>
-    <loc>https://martinfantinelli.dev/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://martinfantinelli.dev/pt/tags/"
+                href="http://localhost:1313/pt/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://martinfantinelli.dev/tags/"
+                href="http://localhost:1313/tags/"
                 />
   </url>
 </urlset>
