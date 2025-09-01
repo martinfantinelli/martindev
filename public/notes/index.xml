@@ -4,11 +4,10 @@
     <title>Notes on Martin Dev</title>
     <link>https://martinfantinelli.dev/notes/</link>
     <description>Recent content in Notes on Martin Dev</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>martinsfantinelli@gmail.com (Martin Fantinelli)</managingEditor>
     <webMaster>martinsfantinelli@gmail.com (Martin Fantinelli)</webMaster>
-    <copyright>Martin Fantinelli</copyright>
     <lastBuildDate></lastBuildDate>
     <atom:link href="https://martinfantinelli.dev/notes/index.xml" rel="self" type="application/rss+xml" />
   </channel>

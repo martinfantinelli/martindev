@@ -1,5 +1,9 @@
 {
   "graph": {
+    "/posts/build-in-public1/": {
+      "in": [],
+      "out": []
+    },
     "/posts/heap-vs-stack/": {
       "in": [],
       "out": []
@@ -10,6 +14,11 @@
     }
   },
   "pages": {
+    "/posts/build-in-public1/": {
+      "permalink": "/posts/build-in-public1/",
+      "section": "posts",
+      "title": "Build in Public 1"
+    },
     "/posts/heap-vs-stack/": {
       "permalink": "/posts/heap-vs-stack/",
       "section": "posts",

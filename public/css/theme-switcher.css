@@ -1,0 +1,103 @@
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --border-color: #e2e8f0;
+  --accent-color: #3b82f6;
+}
+
+[data-theme="dark"], .dark {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --border-color: #334155;
+  --accent-color: #60a5fa;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.dark .prose {
+  color: var(--text-primary);
+}
+
+.dark .prose h1,
+.dark .prose h2,
+.dark .prose h3,
+.dark .prose h4,
+.dark .prose h5,
+.dark .prose h6 {
+  color: var(--text-primary);
+}
+
+.dark .prose a {
+  color: var(--accent-color);
+}
+
+.dark .prose strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.dark .prose em {
+  color: var(--text-primary);
+}
+
+.dark .prose pre {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.dark .prose code {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.dark .prose blockquote {
+  color: var(--text-secondary);
+  border-left-color: var(--border-color);
+}
+
+.dark nav a {
+  color: var(--text-primary);
+}
+
+.dark nav a:hover {
+  color: var(--accent-color);
+}
+
+#theme-toggle,
+#lang-toggle {
+  transition: all 0.2s ease;
+  background: transparent;
+  border: none;
+}
+
+#theme-toggle:hover,
+#lang-toggle:hover {
+  background-color: var(--bg-secondary);
+}
+
+.dark #theme-toggle,
+.dark #lang-toggle {
+  color: var(--text-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --border-color: #334155;
+    --accent-color: #60a5fa;
+  }
+}
