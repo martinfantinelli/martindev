@@ -1,6 +1,6 @@
 +++
 date = '2025-09-01T16:50:23-03:00'
-draft = false
+draft = true
 title = 'Build in Public 1'
 +++
 
@@ -140,7 +140,7 @@ This is just the beginning. We're building Atehra transparently, sharing our tec
 
 ### **What's Next**
 - Designing the application architecture
-- Implementing Brazilian KYC workflows  
+- Implementing Brazilian KYC workflows
 - Building the investor dashboard with real-time updates
 - Integrating Stripe Connect for revenue splitting
 
