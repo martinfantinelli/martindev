@@ -10,6 +10,8 @@ title = 'Heap vs Stack'
 
 The Heap is commonly used for allocating memory for objects, arrays, and other data structures that require a flexible size during program execution. It is particularly useful in scenarios where the size of the data is not known beforehand or may change during the program's runtime. Examples include dynamically sized arrays, linked lists, and instances of classes in object-oriented programming.
 
+<!--more-->
+
 Heap memory refers to a region of a computer's memory used for dynamic memory allocation. Unlike stack memory, which has a fixed size and follows a last-in, first-out (LIFO) order, heap memory allows for more flexible allocation and deallocation of memory blocks during runtime. This flexibility is essential for programs that need to manage large amounts of data or data structures whose sizes are not known in advance.
 
 ## **So what about "The Stack"?**
@@ -55,3 +57,9 @@ Knowing these differences helps you optimize memory usage, debug crashes (like o
 # Thank you for reading!
 
 ![Frieren](/images/frieren.jpeg)
+
+## Redes Sociais
+
+- **LinkedIn**: [martin-fantinelli](https://www.linkedin.com/in/martin-fantinelli/)
+- **X/Twitter**: [@martinfantineli](https://x.com/martinfantineli)
+- **Instagram**: [@martinfantinelli](https://www.instagram.com/martinfantinelli)

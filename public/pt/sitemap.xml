@@ -4,6 +4,16 @@
   <url>
     <loc>https://martinfantinelli.dev/pt/posts/build-in-public1/</loc>
     <lastmod>2025-09-01T16:50:23-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://martinfantinelli.dev/posts/build-in-public1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://martinfantinelli.dev/pt/posts/build-in-public1/"
+                />
   </url><url>
     <loc>https://martinfantinelli.dev/pt/</loc>
     <lastmod>2025-09-01T16:50:23-03:00</lastmod>

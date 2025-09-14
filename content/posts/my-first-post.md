@@ -28,3 +28,9 @@ For last but not least, for each post I'll try to share some random references a
 
 {{< sidenote "Revolution OS Documentary" >}}Revolution OS tells the inside story of the hackers who rebelled against the proprietary software model and Microsoft to create GNU/Linux and the Open Source movement.
 {{< /sidenote >}}
+
+## Redes Sociais
+
+- **LinkedIn**: [martin-fantinelli](https://www.linkedin.com/in/martin-fantinelli/)
+- **X/Twitter**: [@martinfantineli](https://x.com/martinfantineli)
+- **Instagram**: [@martinfantinelli](https://www.instagram.com/martinfantinelli)

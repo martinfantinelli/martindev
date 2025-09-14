@@ -5,15 +5,15 @@
 <meta name="language" content="Português" />
 <meta name="viewport" content="width=device-width" />
 <title>
-    Construindo em Público 1 | Martin Dev
+    Build in Public 1 | Martin Dev
 </title>
 
 
 
 <meta property="og:url" content="https://martinfantinelli.dev/pt/posts/build-in-public1/">
   <meta property="og:site_name" content="Martin Dev">
-  <meta property="og:title" content="Construindo em Público 1">
-  <meta property="og:description" content="Construindo Atehra: Decisões de Stack Tecnológico para um Marketplace de Financiamento Baseado em Receita O Desafio Construir uma plataforma fintech no Brasil não é apenas sobre escrever código—é sobre navegar em uma paisagem complexa de requisitos regulatórios, sistemas de pagamento e processamento de dados financeiros em tempo real.">
+  <meta property="og:title" content="Build in Public 1">
+  <meta property="og:description" content="Build in Public #1: Tech Stack Decisions for a Fintech Startup Você vai encontrar análise honesta de cada escolha, benchmarks de performance, contexto financeiro, tradeoffs detalhados, e estratégias de migração. Nada disso é definitivo, são decisões pra hoje que vão evoluir conforme aprendemos e crescemos.">
   <meta property="og:locale" content="pt_br">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -22,15 +22,15 @@
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Construindo em Público 1">
-  <meta name="twitter:description" content="Construindo Atehra: Decisões de Stack Tecnológico para um Marketplace de Financiamento Baseado em Receita O Desafio Construir uma plataforma fintech no Brasil não é apenas sobre escrever código—é sobre navegar em uma paisagem complexa de requisitos regulatórios, sistemas de pagamento e processamento de dados financeiros em tempo real.">
+  <meta name="twitter:title" content="Build in Public 1">
+  <meta name="twitter:description" content="Build in Public #1: Tech Stack Decisions for a Fintech Startup Você vai encontrar análise honesta de cada escolha, benchmarks de performance, contexto financeiro, tradeoffs detalhados, e estratégias de migração. Nada disso é definitivo, são decisões pra hoje que vão evoluir conforme aprendemos e crescemos.">
 
 
-  <meta itemprop="name" content="Construindo em Público 1">
-  <meta itemprop="description" content="Construindo Atehra: Decisões de Stack Tecnológico para um Marketplace de Financiamento Baseado em Receita O Desafio Construir uma plataforma fintech no Brasil não é apenas sobre escrever código—é sobre navegar em uma paisagem complexa de requisitos regulatórios, sistemas de pagamento e processamento de dados financeiros em tempo real.">
+  <meta itemprop="name" content="Build in Public 1">
+  <meta itemprop="description" content="Build in Public #1: Tech Stack Decisions for a Fintech Startup Você vai encontrar análise honesta de cada escolha, benchmarks de performance, contexto financeiro, tradeoffs detalhados, e estratégias de migração. Nada disso é definitivo, são decisões pra hoje que vão evoluir conforme aprendemos e crescemos.">
   <meta itemprop="datePublished" content="2025-09-01T16:50:23-03:00">
   <meta itemprop="dateModified" content="2025-09-01T16:50:23-03:00">
-  <meta itemprop="wordCount" content="920">
+  <meta itemprop="wordCount" content="2550">
 
 <link rel="canonical" href="https://martinfantinelli.dev/pt/posts/build-in-public1/" />
 
@@ -83,17 +83,17 @@
       <main class="prose prose-slate relative md:prose-lg prose-h1:text-[2em]" id="maincontent">
         <article class="main">
     <header>
-      <h1 class="!mb-1">Construindo Em Público 1</h1><div class="flex flex-row items-center space-x-4">
+      <h1 class="!mb-1">Build in Public 1</h1><div class="flex flex-row items-center space-x-4">
           <time class="text-sm italic opacity-80" datetime="2025-09-01T16:50:23-03:00"
             >1 de setembro de 2025</time
           >
         </div>
     </header>
 
-    <h2 id="construindo-atehra-decisões-de-stack-tecnológico-para-um-marketplace-de-financiamento-baseado-em-receita" class="scroll-mt-8 group">
-  Construindo Atehra: Decisões de Stack Tecnológico para um Marketplace de Financiamento Baseado em Receita
+    <h2 id="build-in-public-1-tech-stack-decisions-for-a-fintech-startup" class="scroll-mt-8 group">
+  <strong>Build in Public #1: Tech Stack Decisions for a Fintech Startup</strong>
   
-    <a href="#construindo-atehra-decis%c3%b5es-de-stack-tecnol%c3%b3gico-para-um-marketplace-de-financiamento-baseado-em-receita"
+    <a href="#build-in-public-1-tech-stack-decisions-for-a-fintech-startup"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -115,10 +115,13 @@
     </a>
   
 </h2>
-<h3 id="o-desafio" class="scroll-mt-8 group">
-  O Desafio
+<p><img src="/images/nami.jpg" alt="nami"></p>
+<p>Você vai encontrar análise honesta de cada escolha, benchmarks de performance, contexto financeiro, tradeoffs detalhados, e estratégias de migração. Nada disso é definitivo, são decisões pra hoje que vão evoluir conforme aprendemos e crescemos.</p>
+<hr>
+<h3 id="por-que-essas-escolhas-análise-técnica-de-um-dev-fullstack" class="scroll-mt-8 group">
+  Por que essas escolhas? (Análise técnica de um dev fullstack)
   
-    <a href="#o-desafio"
+    <a href="#por-que-essas-escolhas-an%c3%a1lise-t%c3%a9cnica-de-um-dev-fullstack"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -140,12 +143,892 @@
     </a>
   
 </h3>
-<p>Construir uma plataforma fintech no Brasil não é apenas sobre escrever código—é sobre navegar em uma paisagem complexa de requisitos regulatórios, sistemas de pagamento e processamento de dados financeiros em tempo real.</p>
-<p><strong>Atehra</strong> é um marketplace conectando empresas e investidores baseado em receita no mercado brasileiro. O desafio principal? Criar uma plataforma que lida com processamento de transações de alto volume, divisões de receita entre múltiplas partes e conformidade regulatória—tudo isso mantendo a experiência do usuário que os investidores esperam de fintechs modernas.</p>
-<h3 id="principais-desafios-técnicos" class="scroll-mt-8 group">
-  Principais Desafios Técnicos
+<p>Cara, vou ser bem honesto. Sou dev há 4+ anos, mas essa é minha primeira vez com uma responsabilidade tão grande em um projeto. Então essas decisões vieram de muito erro, acerto, provavelmente não são as melhores, mas levando em consideração que numa startup você tem que equilibrar <strong>velocidade</strong> vs <strong>robustez</strong>.</p>
+<p><strong>IMPORTANTE: Nada disso é definitivo!</strong></p>
+<p>Essas são decisões pra <strong>hoje</strong>, nada escrito na pedra. Estou sempre aberto a mudanças conforme a gente aprende mais sobre o mercado, o produto, e o que realmente funciona na prática.</p>
+<p>Vamos às decisões (provavelmente mudarão):</p>
+<h4 id="runtime-bun-vs-nodejs-vs-deno" class="scroll-mt-8 group">
+  <strong>Runtime: Bun vs Node.js vs Deno</strong>
   
-    <a href="#principais-desafios-t%c3%a9cnicos"
+    <a href="#runtime-bun-vs-nodejs-vs-deno"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p><strong>Por que Bun?</strong></p>
+<p><strong>Performance Deep Dive</strong>:</p>
+<ul>
+<li><strong>JavaScriptCore engine</strong>: Usa a engine do Safari ao invés do V8, otimizada pra server workloads</li>
+<li><strong>Otimização de system calls</strong>: Syscalls diretas reduzem overhead vs abstração libuv do Node.js</li>
+<li><strong>Memory management</strong>: Garbage collection melhor pra server applications, 50% menos uso de memória</li>
+<li><strong>Benchmarks reais</strong>: endpoint de pagamento: 45k req/s (Bun) vs 12k req/s (Node.js)</li>
+</ul>
+<p><strong>Arquitetura Técnica</strong>:</p>
+<ul>
+<li><strong>Implementação em Zig</strong>: Linguagem de baixo nível pro runtime = melhores características de performance</li>
+<li><strong>Transpiler built-in</strong>: Compilação TypeScript/JSX sem overhead do Babel/webpack</li>
+<li><strong>Módulos nativos</strong>: fs, crypto, http implementados em Zig vs addons C++ no Node.js</li>
+</ul>
+<p><strong>Contexto de Operações Financeiras</strong>:</p>
+<ul>
+<li><strong>Processamento de transações</strong>: 3-4x melhoria de throughput pra operações database-heavy</li>
+<li><strong>Cálculos real-time</strong>: Revenue splits, cálculo de fees executam mais rápido</li>
+<li><strong>Webhook handling</strong>: Melhor handling de concorrência pros callbacks dos payment providers</li>
+</ul>
+<p><strong>Tradeoffs</strong>:</p>
+<ul>
+<li>❌ <strong>Risco de estabilidade</strong>: v1.0 lançada em Sept 2023, alguns edge cases em produção</li>
+<li>❌ <strong>Ferramentas de debug</strong>: Ecosystem menos maduro de profiling/debugging vs Node.js</li>
+<li>✅ <strong>Path de migração</strong>: 99% compatibilidade com Node.js = rollback fácil se necessário</li>
+</ul>
+<p><strong>Por que NÃO Node.js</strong>:</p>
+<ul>
+<li><strong>Event loop blocking</strong>: Natureza single-threaded gargalo pra cálculos financeiros</li>
+<li><strong>Memory leaks</strong>: GC do V8 sofre com processos financeiros long-running</li>
+<li><strong>Cold start</strong>: Inicialização mais lenta impacta padrões de deployment serverless</li>
+</ul>
+<p><strong>Por que NÃO Deno</strong>:</p>
+<ul>
+<li><strong>Complexidade dos import maps</strong>: Abordagem ESM-only complica integrações de SDK de pagamento</li>
+<li><strong>Ecosystem limitado</strong>: SDKs do Stripe, Plaid não otimizados pro runtime do Deno</li>
+<li><strong>Modelo de segurança</strong>: Sistema de permissões adiciona complexidade de deployment pro MVP</li>
+</ul>
+<h4 id="backend-elysia-vs-fastify-vs-express" class="scroll-mt-8 group">
+  <strong>Backend: Elysia vs Fastify vs Express</strong>
+  
+    <a href="#backend-elysia-vs-fastify-vs-express"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p><strong>Por que Elysia?</strong></p>
+<p><strong>Type System Deep Dive</strong>:</p>
+<ul>
+<li><strong>Eden Treaty</strong>: Type safety end-to-end do server pro client sem codegen</li>
+<li><strong>Validação compile-time</strong>: Schemas Zod compilados pra código nativo, zero runtime overhead</li>
+<li><strong>Inferred return types</strong>: Autocomplete no client baseado na implementação real do server</li>
+</ul>
+<p><strong>Arquitetura de Performance</strong>:</p>
+<ul>
+<li><strong>HTTP nativo do Bun</strong>: Bypassa layer de compatibilidade do Node.js, system calls diretas</li>
+<li><strong>Zero-copy parsing</strong>: Parsing de JSON/form data sem alocação de memória</li>
+<li><strong>Routing otimizado</strong>: Radix tree router com otimizações compile-time</li>
+<li><strong>Resultados de benchmark</strong>: 850k req/s (Elysia) vs 85k req/s (Express) vs 650k req/s (Fastify)</li>
+</ul>
+<p><strong>Requisitos de API Financeira</strong>:</p>
+<ul>
+<li><strong>Validação de request</strong>: Validação automática previne dados financeiros malformados</li>
+<li><strong>Serialização de response</strong>: JSON serialization rápida pra market data real-time</li>
+<li><strong>Error handling</strong>: Responses de erro estruturados pra compliance logging</li>
+</ul>
+<p><strong>Tradeoffs</strong>:</p>
+<ul>
+<li>❌ <strong>Maturidade do ecosystem</strong>: Lançado em 2023, plugins de terceiros limitados</li>
+<li>❌ <strong>Gaps na documentação</strong>: Alguns patterns avançados faltam exemplos</li>
+<li>❌ <strong>Learning do time</strong>: Paradigmas novos vs patterns familiares do Express</li>
+<li>✅ <strong>Future-proof</strong>: Construído pro ecosystem moderno do TypeScript</li>
+</ul>
+<p><strong>Por que NÃO Express</strong>:</p>
+<ul>
+<li><strong>Callback hell</strong>: Patterns async propensos a erro pra operações financeiras</li>
+<li><strong>Validação runtime</strong>: Penalty de performance pra validar dados de transação</li>
+<li><strong>Type safety</strong>: Typing manual leva a bugs de produção com dados financeiros</li>
+</ul>
+<p><strong>Por que NÃO Fastify</strong>:</p>
+<ul>
+<li><strong>Limitações do Node.js</strong>: Ainda limitado pelo ceiling de performance V8/libuv</li>
+<li><strong>Complexidade de plugin</strong>: Sistema de plugin muito complexo pra APIs financeiras simples</li>
+<li><strong>Type inference</strong>: Limitado comparado à mágica compile-time do Elysia</li>
+</ul>
+<h4 id="database-postgresql-vs-mongodb-vs-mysql" class="scroll-mt-8 group">
+  <strong>Database: PostgreSQL vs MongoDB vs MySQL</strong>
+  
+    <a href="#database-postgresql-vs-mongodb-vs-mysql"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p><strong>Por que PostgreSQL?</strong></p>
+<p><strong>Integridade de Dados Financeiros</strong>:</p>
+<ul>
+<li><strong>MVCC (Multi-Version Concurrency Control)</strong>: Transações concorrentes sem locking</li>
+<li><strong>WAL (Write-Ahead Logging)</strong>: Recovery de crash e point-in-time recovery</li>
+<li><strong>Serializable isolation</strong>: Previne phantom reads em cálculos financeiros</li>
+<li><strong>Row-level security</strong>: Crítico pra dados financeiros multi-tenant</li>
+</ul>
+<p><strong>Features Avançadas pra Fintech</strong>:</p>
+<ul>
+<li><strong>JSONB indexing</strong>: Queries rápidas em metadata flexível de pagamentos</li>
+<li><strong>Full-text search</strong>: Busca em documentos de KYC e compliance reporting</li>
+<li><strong>Partitioning</strong>: Particionamento baseado em tempo pro histórico de transações</li>
+<li><strong>Extensions</strong>: PostGIS pra detecção de fraude baseada em localização, pgcrypto pra encryption</li>
+</ul>
+<p><strong>Características de Performance</strong>:</p>
+<ul>
+<li><strong>B-tree indexes</strong>: Ótimo pra queries de dados financeiros por data/amount</li>
+<li><strong>Partial indexes</strong>: Indexa só transações ativas, economiza espaço</li>
+<li><strong>Query planning</strong>: Otimizador cost-based pra reports financeiros complexos</li>
+<li><strong>Connection pooling</strong>: pgBouncer lida com 10k+ conexões concorrentes</li>
+</ul>
+<p><strong>Compliance Regulatório</strong>:</p>
+<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
+  <aside
+    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
+  >
+    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
+      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
+        <span class="relative">sql</span>
+      </div>
+      <div>
+        <clipboard-copy
+          type="button"
+          aria-label="Copy code to clipboard"
+          title="Copy code to clipboard"
+          class="block cursor-pointer transition-colors hover:text-sky-400"
+          target="#codeblock-01 code"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-clipboard h-4 w-4"
+  viewBox="0 0 24 24"
+>
+  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+</svg>
+
+        </clipboard-copy>
+      </div>
+      <div>
+        <a
+          href="#codeblock-01"
+          class="block"
+          aria-label="Link to this code block"
+          title="Link to this code block"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+        </a>
+      </div>
+    </div>
+  </aside>
+  <p class="sr-only">sql code snippet start</p>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- Audit trail imutável
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">transactions</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">id</span><span class="w"> </span><span class="n">UUID</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="n">gen_random_uuid</span><span class="p">(),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">amount</span><span class="w"> </span><span class="nb">DECIMAL</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">created_at</span><span class="w"> </span><span class="n">TIMESTAMPTZ</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="n">NOW</span><span class="p">(),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c1">-- Nunca permite updates em dados financeiros
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">  </span><span class="n">updated_at</span><span class="w"> </span><span class="n">TIMESTAMPTZ</span><span class="w"> </span><span class="k">GENERATED</span><span class="w"> </span><span class="n">ALWAYS</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span><span class="n">created_at</span><span class="p">)</span><span class="w"> </span><span class="n">STORED</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">);</span></span></span></code></pre></div>
+  <p class="sr-only">sql code snippet end</p>
+
+  
+</figure>
+<p><strong>Tradeoffs</strong>:</p>
+<ul>
+<li>❌ <strong>Limites de vertical scaling</strong>: Gargalos single-node em ~100k TPS</li>
+<li>❌ <strong>Complexidade operacional</strong>: Backup, monitoring, tuning requer expertise</li>
+<li>❌ <strong>Memory hungry</strong>: Requer tuning cuidadoso de shared_buffers</li>
+<li>✅ <strong>Battle-tested</strong>: Usado por bancos, instituições financeiras globalmente</li>
+</ul>
+<p><strong>Por que NÃO MongoDB</strong>:</p>
+<ul>
+<li><strong>Eventual consistency</strong>: Partições de rede = balanços incorretos</li>
+<li><strong>Flexibilidade de schema</strong>: Muito perigoso pra estrutura de dados financeiros</li>
+<li><strong>Limitações de transação</strong>: ACID multi-document só em replica sets</li>
+</ul>
+<p><strong>Por que NÃO MySQL</strong>:</p>
+<ul>
+<li><strong>Performance JSON</strong>: Queries JSON mais lentas vs JSONB do PostgreSQL</li>
+<li><strong>Window functions</strong>: Capacidades analíticas limitadas vs PostgreSQL</li>
+<li><strong>Full-text search</strong>: Básico comparado às features avançadas do PostgreSQL</li>
+</ul>
+<h4 id="orm-prisma-vs-typeorm-vs-sequelize" class="scroll-mt-8 group">
+  <strong>ORM: Prisma vs TypeORM vs Sequelize</strong>
+  
+    <a href="#orm-prisma-vs-typeorm-vs-sequelize"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p><strong>Por que Prisma?</strong></p>
+<p><strong>Type Generation Deep Dive</strong>:</p>
+<ul>
+<li><strong>Abordagem schema-first</strong>: Single source of truth pro database e tipos</li>
+<li><strong>Generated client</strong>: Tipos refletem schema exato do database, impossível de driftar</li>
+<li><strong>Relation inference</strong>: Geração automática de JOIN com type safety</li>
+</ul>
+<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-02">
+  <aside
+    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
+  >
+    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
+      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
+        <span class="relative">typescript</span>
+      </div>
+      <div>
+        <clipboard-copy
+          type="button"
+          aria-label="Copy code to clipboard"
+          title="Copy code to clipboard"
+          class="block cursor-pointer transition-colors hover:text-sky-400"
+          target="#codeblock-02 code"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-clipboard h-4 w-4"
+  viewBox="0 0 24 24"
+>
+  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+</svg>
+
+        </clipboard-copy>
+      </div>
+      <div>
+        <a
+          href="#codeblock-02"
+          class="block"
+          aria-label="Link to this code block"
+          title="Link to this code block"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+        </a>
+      </div>
+    </div>
+  </aside>
+  <p class="sr-only">typescript code snippet start</p>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="c1">// Isso é totalmente type-safe, com autocomplete
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">transaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">prisma</span><span class="p">.</span><span class="nx">transaction</span><span class="p">.</span><span class="nx">findUnique</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">where</span><span class="o">:</span> <span class="p">{</span> <span class="nx">id</span>: <span class="kt">transactionId</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">include</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">user</span><span class="o">:</span> <span class="p">{</span> <span class="nx">select</span><span class="o">:</span> <span class="p">{</span> <span class="nx">email</span>: <span class="kt">true</span> <span class="p">}</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">splits</span><span class="o">:</span> <span class="p">{</span> <span class="nx">include</span><span class="o">:</span> <span class="p">{</span> <span class="nx">investor</span>: <span class="kt">true</span> <span class="p">}</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// transaction.user.email é tipado e com autocomplete
+</span></span></span><span class="line"><span class="cl"><span class="c1">// transaction.splits[0].investor.name é tipado
+</span></span></span></code></pre></div>
+  <p class="sr-only">typescript code snippet end</p>
+
+  
+</figure>
+<p><strong>Arquitetura do Query Engine</strong>:</p>
+<ul>
+<li><strong>Engine baseada em Rust</strong>: Performance melhor que ORMs baseadas em JavaScript</li>
+<li><strong>Connection pooling</strong>: Pooling built-in com limites de conexão</li>
+<li><strong>Query batching</strong>: Resolução automática de queries N+1</li>
+<li><strong>Prepared statements</strong>: Prevenção de SQL injection por padrão</li>
+</ul>
+<p><strong>Patterns de Dados Financeiros</strong>:</p>
+<ul>
+<li><strong>Precisão decimal</strong>: Suporte nativo pra decimais financeiros</li>
+<li><strong>Audit timestamps</strong>: Tracking automático de createdAt/updatedAt</li>
+<li><strong>Soft deletes</strong>: Suporte built-in pra retenção de dados financeiros</li>
+<li><strong>Migration safety</strong>: Migrações de schema com suporte a rollback</li>
+</ul>
+<p><strong>Developer Experience</strong>:</p>
+<ul>
+<li><strong>Prisma Studio</strong>: Browser visual de database pra debugging</li>
+<li><strong>Migration workflow</strong>: Mudanças de schema version-controlled</li>
+<li><strong>Seed scripts</strong>: Data seeding baseado em TypeScript</li>
+<li><strong>Validação real-time</strong>: Erros de schema capturados em development time</li>
+</ul>
+<p><strong>Tradeoffs</strong>:</p>
+<ul>
+<li>❌ <strong>Complexidade de raw query</strong>: Reports financeiros complexos precisam de SQL raw</li>
+<li>❌ <strong>Bundle size</strong>: Cliente ~2MB vs alternativas leves</li>
+<li>❌ <strong>Curva de aprendizado</strong>: Patterns diferentes de ORMs tradicionais</li>
+<li>✅ <strong>Ganho de produtividade</strong>: 60% menos boilerplate code pras APIs financeiras</li>
+</ul>
+<p><strong>Por que NÃO TypeORM</strong>:</p>
+<ul>
+<li><strong>Decorator hell</strong>: Explosão de metadata pra models financeiros complexos</li>
+<li><strong>Runtime reflection</strong>: Penalty de performance pros decorators do TypeScript</li>
+<li><strong>Active Record pattern</strong>: Mistura business logic com data access</li>
+</ul>
+<p><strong>Por que NÃO Sequelize</strong>:</p>
+<ul>
+<li><strong>JavaScript-only</strong>: Sem suporte nativo ao TypeScript</li>
+<li><strong>Callback patterns</strong>: Async baseado em Promise é mais difícil de entender</li>
+<li><strong>Model definition</strong>: Configuração verbosa pra requisitos de precisão financeira</li>
+</ul>
+<h4 id="cachequeue-redis--bullmq-vs-rabbitmq-vs-aws-sqs" class="scroll-mt-8 group">
+  <strong>Cache/Queue: Redis + BullMQ vs RabbitMQ vs AWS SQS</strong>
+  
+    <a href="#cachequeue-redis--bullmq-vs-rabbitmq-vs-aws-sqs"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p><strong>Por que Redis + BullMQ?</strong></p>
+<p><strong>Benefícios de Arquitetura Unificada</strong>:</p>
+<ul>
+<li><strong>Single data store</strong>: Cache, sessões, queues, pub/sub em um sistema só</li>
+<li><strong>Eficiência de memória</strong>: Pool de memória compartilhado vs sistemas separados</li>
+<li><strong>Simplicidade operacional</strong>: Um serviço pra monitorar, backup, scale</li>
+<li><strong>Network locality</strong>: Cache e queue co-localizados reduzem latência</li>
+</ul>
+<p><strong>Features Avançadas do BullMQ</strong>:</p>
+<ul>
+<li><strong>Job priorities</strong>: Processamento crítico de pagamento tem precedência</li>
+<li><strong>Delayed jobs</strong>: Agenda processamento de settlement, compliance reports</li>
+<li><strong>Rate limiting</strong>: Previne martelação de API dos payment providers</li>
+<li><strong>Job retry com exponential backoff</strong>: Lida com falhas transitórias de pagamento</li>
+</ul>
+<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-03">
+  <aside
+    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
+  >
+    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
+      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
+        <span class="relative">typescript</span>
+      </div>
+      <div>
+        <clipboard-copy
+          type="button"
+          aria-label="Copy code to clipboard"
+          title="Copy code to clipboard"
+          class="block cursor-pointer transition-colors hover:text-sky-400"
+          target="#codeblock-03 code"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-clipboard h-4 w-4"
+  viewBox="0 0 24 24"
+>
+  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+</svg>
+
+        </clipboard-copy>
+      </div>
+      <div>
+        <a
+          href="#codeblock-03"
+          class="block"
+          aria-label="Link to this code block"
+          title="Link to this code block"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+        </a>
+      </div>
+    </div>
+  </aside>
+  <p class="sr-only">typescript code snippet start</p>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="c1">// Job financeiro com retry logic
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">await</span> <span class="nx">paymentQueue</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;processPayment&#39;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">transactionId</span><span class="o">:</span> <span class="s1">&#39;123&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">amount</span>: <span class="kt">1000.00</span>
+</span></span><span class="line"><span class="cl"><span class="p">},</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">attempts</span>: <span class="kt">5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">backoff</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">type</span><span class="o">:</span> <span class="s1">&#39;exponential&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">delay</span>: <span class="kt">2000</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">removeOnComplete</span>: <span class="kt">100</span><span class="p">,</span> <span class="c1">// Mantém pra auditoria
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">removeOnFail</span>: <span class="kt">50</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span></span></span></code></pre></div>
+  <p class="sr-only">typescript code snippet end</p>
+
+  
+</figure>
+<p><strong>Características de Performance</strong>:</p>
+<ul>
+<li><strong>Velocidade in-memory</strong>: Job pickup sub-milissegundo pra pagamentos time-sensitive</li>
+<li><strong>Redis Streams</strong>: Histórico persistente de jobs pra compliance auditing</li>
+<li><strong>Lua scripting</strong>: Operações de job atômicas previnem race conditions</li>
+<li><strong>Pipeline commands</strong>: Operações em batch reduzem network round-trips</li>
+</ul>
+<p><strong>Casos de Uso Financeiros</strong>:</p>
+<ul>
+<li><strong>Processamento de pagamento</strong>: Handling assíncrono de webhooks do Stripe</li>
+<li><strong>Cálculos de settlement</strong>: Distribuição de receita end-of-day</li>
+<li><strong>Compliance reporting</strong>: Reports regulatórios diários/mensais</li>
+<li><strong>Delivery de notificação</strong>: Updates real-time pros investidores</li>
+</ul>
+<p><strong>Setup de High Availability</strong>:</p>
+<ul>
+<li><strong>Redis Sentinel</strong>: Failover automático pra 99.9% uptime</li>
+<li><strong>Redis Cluster</strong>: Scaling horizontal pra processamento high-volume</li>
+<li><strong>AOF + RDB</strong>: Persistência pra recovery de jobs após crashes</li>
+</ul>
+<p><strong>Tradeoffs</strong>:</p>
+<ul>
+<li>❌ <strong>Limitações de memória</strong>: Jobs devem caber na RAM vs queues baseadas em disk</li>
+<li>❌ <strong>Setup complexo</strong>: Configuração do Redis Cluster pra produção</li>
+<li>❌ <strong>Risco de perda de dados</strong>: Memory-first significa potencial perda de job em crashes</li>
+<li>✅ <strong>Velocidade de desenvolvimento</strong>: Stack única vs setup complexo de message broker</li>
+</ul>
+<p><strong>Por que NÃO RabbitMQ</strong>:</p>
+<ul>
+<li><strong>Complexidade do Erlang</strong>: Mais difícil de debugar, monitorar, e tunar</li>
+<li><strong>Overhead de message durability</strong>: Disk I/O desacelera processamento financeiro</li>
+<li><strong>Memory management</strong>: Flow control complexo vs simplicidade do Redis</li>
+</ul>
+<p><strong>Por que NÃO AWS SQS</strong>:</p>
+<ul>
+<li><strong>Vendor lock-in</strong>: Migração mais difícil vs Redis self-hosted</li>
+<li><strong>Latência</strong>: Network calls vs processamento in-memory</li>
+<li><strong>Cost scaling</strong>: Pricing por mensagem vs custo flat de hosting do Redis</li>
+</ul>
+<h4 id="payments-stripe-connect-vs-mercado-pago-vs-pix-nativo" class="scroll-mt-8 group">
+  <strong>Payments: Stripe Connect vs Mercado Pago vs PIX Nativo</strong>
+  
+    <a href="#payments-stripe-connect-vs-mercado-pago-vs-pix-nativo"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p><strong>Por que Stripe Connect?</strong></p>
+<p><strong>Marketplace Architecture Deep Dive</strong>:</p>
+<ul>
+<li><strong>Multi-party payments</strong>: Charges diretos pras connected accounts</li>
+<li><strong>Application fees</strong>: Coleção automática de platform fee</li>
+<li><strong>Express accounts</strong>: Onboarding simplificado pra CPF/CNPJ brasileiro</li>
+<li><strong>Transfers</strong>: Payouts instantâneos ou agendados pras connected accounts</li>
+</ul>
+<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-04">
+  <aside
+    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
+  >
+    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
+      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
+        <span class="relative">typescript</span>
+      </div>
+      <div>
+        <clipboard-copy
+          type="button"
+          aria-label="Copy code to clipboard"
+          title="Copy code to clipboard"
+          class="block cursor-pointer transition-colors hover:text-sky-400"
+          target="#codeblock-04 code"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-clipboard h-4 w-4"
+  viewBox="0 0 24 24"
+>
+  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+</svg>
+
+        </clipboard-copy>
+      </div>
+      <div>
+        <a
+          href="#codeblock-04"
+          class="block"
+          aria-label="Link to this code block"
+          title="Link to this code block"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+        </a>
+      </div>
+    </div>
+  </aside>
+  <p class="sr-only">typescript code snippet start</p>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="c1">// Pagamento multi-party com splits automáticos
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">payment</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">stripe</span><span class="p">.</span><span class="nx">paymentIntents</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">amount</span>: <span class="kt">10000</span><span class="p">,</span> <span class="c1">// R$100.00
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">currency</span><span class="o">:</span> <span class="s1">&#39;brl&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">on_behalf_of</span>: <span class="kt">businessAccount.id</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">transfer_data</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">destination</span>: <span class="kt">businessAccount.id</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">application_fee_amount</span>: <span class="kt">500</span><span class="p">,</span> <span class="c1">// R$5.00 platform fee
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">})</span></span></span></code></pre></div>
+  <p class="sr-only">typescript code snippet end</p>
+
+  
+</figure>
+<p><strong>Compliance &amp; Security</strong>:</p>
+<ul>
+<li><strong>PCI DSS Level 1</strong>: Certificação de segurança mais alta pra dados de cartão</li>
+<li><strong>3D Secure 2</strong>: Strong customer authentication pra regulamentações da UE</li>
+<li><strong>SCA compliance</strong>: Secure Customer Authentication pro Brasil</li>
+<li><strong>Fraud detection</strong>: Avaliação de risco baseada em machine learning</li>
+<li><strong>KYC automation</strong>: Verificação de identidade pras connected accounts</li>
+</ul>
+<p><strong>Benefícios de Integração Técnica</strong>:</p>
+<ul>
+<li><strong>Webhook reliability</strong>: Retries automáticos, idempotency keys</li>
+<li><strong>SDK ecosystem</strong>: Bibliotecas oficiais pra todas as linguagens principais</li>
+<li><strong>Test mode</strong>: Ambiente sandbox completo pra desenvolvimento</li>
+<li><strong>Dashboard</strong>: Monitoring real-time, gerenciamento de disputes</li>
+</ul>
+<p><strong>Operações Financeiras</strong>:</p>
+<ul>
+<li><strong>Instant payouts</strong>: Transferências real-time pra contas bancárias</li>
+<li><strong>Currency conversion</strong>: Suporte multi-currency pra expansão internacional</li>
+<li><strong>Reconciliation</strong>: Reporting detalhado de transações pra contabilidade</li>
+<li><strong>Chargeback protection</strong>: Handling automático de disputes</li>
+</ul>
+<p><strong>Considerações do Mercado Brasileiro</strong>:</p>
+<ul>
+<li><strong>Integração PIX</strong>: Em beta, suporte completo esperado Q2 2024</li>
+<li><strong>Suporte a Boleto</strong>: Método de pagamento brasileiro tradicional</li>
+<li><strong>Tax compliance</strong>: Cálculo e reporting automático de IRPF/ISS</li>
+<li><strong>Suporte a bancos locais</strong>: Integração com principais bancos brasileiros</li>
+</ul>
+<p><strong>Tradeoffs</strong>:</p>
+<ul>
+<li>❌ <strong>Fees mais altos</strong>: 4.99% vs 3.99% providers locais, mas inclui proteção contra fraude</li>
+<li>❌ <strong>USD settlement</strong>: Custos de conversão de moeda pras operações BRL</li>
+<li>❌ <strong>PIX limitado</strong>: Suporte atual a PIX através de third-party providers apenas</li>
+<li>✅ <strong>Escala global</strong>: Battle-tested com milhões de negócios mundialmente</li>
+</ul>
+<p><strong>Por que NÃO MercadoPago(Ainda)</strong>:</p>
+<ul>
+<li><strong>Instabilidade de API</strong>: Breaking changes frequentes, documentação inconsistente</li>
+<li><strong>Internacional limitado</strong>: Difícil expandir além dos mercados LATAM</li>
+<li><strong>Webhook reliability</strong>: Problemas conhecidos com consistência de delivery</li>
+</ul>
+<p><strong>Por que NÃO PIX Nativo(Ainda)</strong>:</p>
+<ul>
+<li><strong>Complexidade de integração</strong>: APIs diferentes pra cada banco brasileiro</li>
+<li><strong>Timing de settlement</strong>: T+1 vs instant com Stripe</li>
+<li><strong>Proteção contra fraude</strong>: Implementação manual de risk management</li>
+<li><strong>Compliance burden</strong>: Integração direta com requisitos do Banco Central</li>
+</ul>
+<p><strong>Estratégia de Migração</strong>:</p>
+<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-05">
+  <aside
+    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
+  >
+    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
+      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
+        <span class="relative">typescript</span>
+      </div>
+      <div>
+        <clipboard-copy
+          type="button"
+          aria-label="Copy code to clipboard"
+          title="Copy code to clipboard"
+          class="block cursor-pointer transition-colors hover:text-sky-400"
+          target="#codeblock-05 code"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-clipboard h-4 w-4"
+  viewBox="0 0 24 24"
+>
+  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+</svg>
+
+        </clipboard-copy>
+      </div>
+      <div>
+        <a
+          href="#codeblock-05"
+          class="block"
+          aria-label="Link to this code block"
+          title="Link to this code block"
+        >
+          <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+        </a>
+      </div>
+    </div>
+  </aside>
+  <p class="sr-only">typescript code snippet start</p>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="c1">// Plano de rollout gradual
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="nx">monthlyVolume</span> <span class="o">&gt;</span> <span class="mi">25000</span> <span class="o">&amp;&amp;</span> <span class="nx">user</span><span class="p">.</span><span class="nx">country</span> <span class="o">===</span> <span class="s1">&#39;BR&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Usa PIX pra transações domésticas
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">return</span> <span class="nx">processWithPIX</span><span class="p">(</span><span class="nx">payment</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Usa Stripe pra internacional + baixo volume
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">return</span> <span class="nx">processWithStripe</span><span class="p">(</span><span class="nx">payment</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+  <p class="sr-only">typescript code snippet end</p>
+
+  
+</figure>
+<h4 id="deploy-digitalocean-vs-aws-vs-railway" class="scroll-mt-8 group">
+  <strong>Deploy: DigitalOcean vs AWS vs Railway</strong>
+  
+    <a href="#deploy-digitalocean-vs-aws-vs-railway"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p><strong>Por que DigitalOcean App Platform?</strong></p>
+<p><strong>Arquitetura Otimizada pra Startup</strong>:</p>
+<ul>
+<li><strong>Git-based deployment</strong>: Push pra deploy, builds automáticos do GitHub</li>
+<li><strong>Zero-config scaling</strong>: Auto-scaling baseado em uso de CPU/memory</li>
+<li><strong>Monitoring integrado</strong>: Métricas built-in, alertas sem setup adicional</li>
+<li><strong>Database management</strong>: Backups automáticos, connection pooling, read replicas</li>
+</ul>
+<p><strong>Requisitos de Aplicação Financeira</strong>:</p>
+<ul>
+<li><strong>Compliance</strong>: Certificações SOC 2 Type II, ISO 27001</li>
+<li><strong>Uptime SLA</strong>: 99.95% uptime garantido pra operações financeiras</li>
+<li><strong>Data residency</strong>: Regiões configuráveis pra compliance regulatório</li>
+<li><strong>Estratégia de backup</strong>: Point-in-time recovery, backups cross-region</li>
+</ul>
+<p><strong>Developer Experience</strong>:</p>
+<ul>
+<li><strong>Preview deployments</strong>: Ambientes de staging baseados em branch</li>
+<li><strong>Environment variables</strong>: Gerenciamento seguro de secrets</li>
+<li><strong>Custom domains</strong>: Certificados SSL gerenciados automaticamente</li>
+<li><strong>Team collaboration</strong>: Role-based access control</li>
+</ul>
+<p><strong>Características de Scaling</strong>:</p>
+<ul>
+<li><strong>Vertical scaling</strong>: Até 32GB RAM, 8 vCPUs por serviço</li>
+<li><strong>Horizontal scaling</strong>: Múltiplas instâncias com load balancing</li>
+<li><strong>Database scaling</strong>: Read replicas, connection pooling</li>
+<li><strong>CDN integration</strong>: Edge caching global pra static assets</li>
+</ul>
+<p><strong>Tradeoffs</strong>:</p>
+<ul>
+<li>❌ <strong>Limitações de serviço</strong>: Sem serviços AI/ML, funções serverless limitadas</li>
+<li>❌ <strong>Vendor lock-in</strong>: Complexidade de migração vs deployment containerizado AWS</li>
+<li>❌ <strong>Networking avançado</strong>: Opções limitadas de VPC, custom routing</li>
+<li>✅ <strong>Simplicidade operacional</strong>: 90% menos overhead DevOps vs setup AWS</li>
+</ul>
+<p><strong>Por que NÃO AWS</strong>:</p>
+<ul>
+<li><strong>Overhead de complexidade</strong>: 20+ serviços necessários pra setup fintech básico</li>
+<li><strong>Imprevisibilidade de custo</strong>: Spikes de billing de serviços mal configurados</li>
+<li><strong>Requisito de DevOps</strong>: Precisa de infrastructure engineer dedicado</li>
+</ul>
+<p><strong>Por que NÃO Railway</strong>:</p>
+<ul>
+<li><strong>Modelo de pricing</strong>: Caro em escala comparado ao DigitalOcean</li>
+<li><strong>Opções limitadas de database</strong>: Sem PostgreSQL replicas managed</li>
+<li><strong>Startup risk</strong>: Empresa menor, viabilidade long-term incerta</li>
+</ul>
+<p><strong>Estratégia de Migração</strong>:</p>
+<ul>
+<li><strong>Threshold de 12 meses</strong>: Avaliar migração quando atingir limites de infraestrutura</li>
+<li><strong>Container-ready</strong>: Deploy Docker facilita migrações futuras</li>
+<li><strong>Database portability</strong>: Processo standard PostgreSQL dump/restore</li>
+</ul>
+<hr>
+<h3 id="decisões" class="scroll-mt-8 group">
+  <strong>Decisões</strong>
+  
+    <a href="#decis%c3%b5es"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -167,114 +1050,19 @@
     </a>
   
 </h3>
-<h4 id="complexidade-de-conformidade-regulatória" class="scroll-mt-8 group">
-  <strong>Complexidade de Conformidade Regulatória</strong>
+<p><strong>Prioridades Atuais</strong> (sujeitas a mudança):</p>
+<ol>
+<li><strong>Velocity</strong>: Ship fast, iterate faster - porque validação de mercado &gt; perfeição técnica</li>
+<li><strong>Type Safety</strong>: Reduzir bugs em production - porque erro com dinheiro é caro</li>
+<li><strong>Cost Control</strong>: Runway é limitado - porque runway determina quantos pivots podemos dar</li>
+<li><strong>Team Scalability</strong>: Onboarding rápido de devs - porque não podemos contratar só senior</li>
+</ol>
+<p>Essas escolhas técnicas vão evoluir conforme o modelo de negócio se solidifica, time cresce, e temos feedback real de usuários. O objetivo não é acertar—é errar rápido e barato.</p>
+<hr>
+<h3 id="a-jornada-build-in-public" class="scroll-mt-8 group">
+  <strong>A Jornada Build-in-Public</strong>
   
-    <a href="#complexidade-de-conformidade-regulat%c3%b3ria"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h4>
-<p>Plataformas de financiamento alternativo brasileiras devem cumprir regulamentações financeiras e leis de proteção de dados LGPD. Precisamos de processos robustos de KYC para verificação de investidores, incluindo validação de documentos, avaliação de risco e monitoramento contínuo de conformidade.</p>
-<h4 id="divisão-de-receita-em-escala" class="scroll-mt-8 group">
-  <strong>Divisão de Receita em Escala</strong>
-  
-    <a href="#divis%c3%a3o-de-receita-em-escala"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h4>
-<p>Cada transação de cliente das empresas precisa de processamento em tempo real para dividir a receita entre a empresa, investidores e taxas da plataforma. Isso não é apenas sobre matemática—é sobre garantir transações atômicas, lidar com casos extremos e manter trilhas de auditoria para relatórios regulatórios.</p>
-<h4 id="dados-financeiros-em-tempo-real" class="scroll-mt-8 group">
-  <strong>Dados Financeiros em Tempo Real</strong>
-  
-    <a href="#dados-financeiros-em-tempo-real"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h4>
-<p>Investidores esperam ver seus retornos sendo atualizados em tempo real conforme as empresas geram receita. Isso significa conexões WebSocket, dashboards ao vivo e notificações instantâneas—tudo isso garantindo precisão e segurança dos dados.</p>
-<h4 id="complexidade-de-integração-de-pagamentos" class="scroll-mt-8 group">
-  <strong>Complexidade de Integração de Pagamentos</strong>
-  
-    <a href="#complexidade-de-integra%c3%a7%c3%a3o-de-pagamentos"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h4>
-<p>A paisagem de pagamentos brasileira inclui PIX (transferências instantâneas), bancos tradicionais e processadores de cartão internacionais. Cada um tem diferentes APIs, padrões de webhook e requisitos de conformidade.</p>
-<h3 id="avaliação-do-stack-tecnológico" class="scroll-mt-8 group">
-  Avaliação do Stack Tecnológico
-  
-    <a href="#avalia%c3%a7%c3%a3o-do-stack-tecnol%c3%b3gico"
+    <a href="#a-jornada-build-in-public"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -296,649 +1084,11 @@
     </a>
   
 </h3>
-<h4 id="decisão-do-framework-backend" class="scroll-mt-8 group">
-  <strong>Decisão do Framework Backend</strong>
+<p>Este é só o começo. Estamos construindo nossa fintech de forma transparente, compartilhando decisões técnicas, desafios e aprendizados pelo caminho.</p>
+<h4 id="próximos-passos" class="scroll-mt-8 group">
+  <strong>Próximos passos</strong>
   
-    <a href="#decis%c3%a3o-do-framework-backend"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h4>
-<h5 id="opção-1-nodejs--typescript" class="scroll-mt-8 group">
-  <strong>Opção 1: Node.js + TypeScript</strong>
-  
-    <a href="#op%c3%a7%c3%a3o-1-nodejs--typescript"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h5>
-<p><strong>Prós</strong>: Máxima flexibilidade, leve, SDKs extensivos de gateways de pagamento, prototipagem rápida</p>
-<p><strong>Contras</strong>: Configuração manual para validação, logging, padrões de segurança</p>
-<h5 id="opção-2-python--fastapi" class="scroll-mt-8 group">
-  <strong>Opção 2: Python + FastAPI</strong>
-  
-    <a href="#op%c3%a7%c3%a3o-2-python--fastapi"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h5>
-<p><strong>Prós</strong>: Excelente para processamento de dados, ecosistema ML forte, suporte async limpo</p>
-<p><strong>Contras</strong>: Overhead de performance, menos suporte a bibliotecas de pagamento fintech</p>
-<h5 id="opção-3-java--spring-boot" class="scroll-mt-8 group">
-  <strong>Opção 3: Java + Spring Boot</strong>
-  
-    <a href="#op%c3%a7%c3%a3o-3-java--spring-boot"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h5>
-<p><strong>Prós</strong>: Nível empresarial, testado em batalha para bancos, excelente ecosistema de ferramentas</p>
-<p><strong>Contras</strong>: Sintaxe verbosa, ciclo de desenvolvimento mais lento, exagero para MVP</p>
-<h5 id="opção-4-go--ginfiber" class="scroll-mt-8 group">
-  <strong>Opção 4: Go + Gin/Fiber</strong>
-  
-    <a href="#op%c3%a7%c3%a3o-4-go--ginfiber"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h5>
-<p><strong>Prós</strong>: Performance superior, excelente concorrência, eficiência de memória</p>
-<p><strong>Contras</strong>: Ecosistema menor, curva de aprendizado mais íngreme, integrações de pagamento limitadas</p>
-<p><strong>Decisão</strong>: <strong>Node.js + TypeScript</strong> para velocidade de MVP e ecosistema de gateway de pagamento, com caminho claro de migração para NestJS conforme escalamos.</p>
-<h4 id="estratégia-de-banco-de-dados" class="scroll-mt-8 group">
-  <strong>Estratégia de Banco de Dados</strong>
-  
-    <a href="#estrat%c3%a9gia-de-banco-de-dados"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h4>
-<h5 id="opção-1-postgresql" class="scroll-mt-8 group">
-  <strong>Opção 1: PostgreSQL</strong>
-  
-    <a href="#op%c3%a7%c3%a3o-1-postgresql"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h5>
-<p><strong>Prós</strong>: Transações ACID (crítico para divisões), ecosistema maduro, forte consistência</p>
-<p><strong>Contras</strong>: Complexidade de escala para transações de alto volume</p>
-<h5 id="opção-2-mongodb" class="scroll-mt-8 group">
-  <strong>Opção 2: MongoDB</strong>
-  
-    <a href="#op%c3%a7%c3%a3o-2-mongodb"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h5>
-<p><strong>Prós</strong>: Schema flexível, escala horizontal</p>
-<p><strong>Contras</strong>: Riscos de consistência eventual para dados financeiros</p>
-<p><strong>Decisão</strong>: <strong>PostgreSQL</strong> porque dados financeiros exigem garantias ACID e auditoria regulatória requer consultas estruturadas.</p>
-<h4 id="processamento-de-pagamentos" class="scroll-mt-8 group">
-  <strong>Processamento de Pagamentos</strong>
-  
-    <a href="#processamento-de-pagamentos"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h4>
-<h5 id="opção-1-pix-nativo-pagbank-banco-inter" class="scroll-mt-8 group">
-  <strong>Opção 1: PIX Nativo (PagBank, Banco Inter)</strong>
-  
-    <a href="#op%c3%a7%c3%a3o-1-pix-nativo-pagbank-banco-inter"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h5>
-<p><strong>Prós</strong>: Transferências brasileiras instantâneas, zero taxas, familiar para todos usuários</p>
-<p><strong>Contras</strong>: Implementação de split complexa, limitado ao Brasil, reconciliação manual</p>
-<h5 id="opção-2-mercado-pago" class="scroll-mt-8 group">
-  <strong>Opção 2: Mercado Pago</strong>
-  
-    <a href="#op%c3%a7%c3%a3o-2-mercado-pago"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h5>
-<p><strong>Prós</strong>: Forte presença brasileira, suporte PIX + cartão, experiência em marketplace</p>
-<p><strong>Contras</strong>: Confiabilidade de API variável, integração complexa, expansão internacional limitada</p>
-<h5 id="opção-3-stripe-connect" class="scroll-mt-8 group">
-  <strong>Opção 3: Stripe Connect</strong>
-  
-    <a href="#op%c3%a7%c3%a3o-3-stripe-connect"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h5>
-<p><strong>Prós</strong>: Divisão de pagamentos de marketplace maduro, excelente experiência do desenvolvedor, comprovado em escala</p>
-<p><strong>Contras</strong>: Menos integração PIX, taxas internacionais, manuseio de moeda USD</p>
-<p><strong>Decisão</strong>: <strong>Stripe Connect</strong> para MVP para aproveitar sua expertise em pagamentos de marketplace, com integração PIX planejada para Fase 2.</p>
-<h4 id="framework-frontend" class="scroll-mt-8 group">
-  <strong>Framework Frontend</strong>
-  
-    <a href="#framework-frontend"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h4>
-<h5 id="opção-1-react--typescript" class="scroll-mt-8 group">
-  <strong>Opção 1: React + TypeScript</strong>
-  
-    <a href="#op%c3%a7%c3%a3o-1-react--typescript"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h5>
-<p><strong>Prós</strong>: Bibliotecas extensivas de componentes fintech, grande pool de desenvolvedores, ecosistema de tempo real maduro</p>
-<p><strong>Contras</strong>: Tamanho do bundle, complexidade do gerenciamento de estado</p>
-<h5 id="opção-2-vuejs--typescript" class="scroll-mt-8 group">
-  <strong>Opção 2: Vue.js + TypeScript</strong>
-  
-    <a href="#op%c3%a7%c3%a3o-2-vuejs--typescript"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h5>
-<p><strong>Prós</strong>: Curva de aprendizado mais suave, excelente performance, arquitetura limpa</p>
-<p><strong>Contras</strong>: Ecosistema fintech menor, menos bibliotecas de componentes de dashboard</p>
-<p><strong>Decisão</strong>: <strong>React + TypeScript</strong> principalmente devido ao robusto ecosistema fintech—bibliotecas como Ant Design Pro fornecem componentes de dashboard de nível empresarial prontos para uso.</p>
-<h4 id="otimização-do-cliente-http" class="scroll-mt-8 group">
-  <strong>Otimização do Cliente HTTP</strong>
-  
-    <a href="#otimiza%c3%a7%c3%a3o-do-cliente-http"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h4>
-<h5 id="escolha-padrão-axios" class="scroll-mt-8 group">
-  <strong>Escolha Padrão: Axios</strong>
-  
-    <a href="#escolha-padr%c3%a3o-axios"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h5>
-<p><strong>Prós</strong>: Rico em recursos, familiar para a maioria dos desenvolvedores</p>
-<p><strong>Contras</strong>: Bundle de 33KB, overhead de performance</p>
-<h5 id="escolha-de-performance-ky" class="scroll-mt-8 group">
-  <strong>Escolha de Performance: Ky</strong>
-  
-    <a href="#escolha-de-performance-ky"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h5>
-<p><strong>Prós</strong>: Bundle de 13KB (60% menor), baseado em fetch moderno, TypeScript-first</p>
-<p><strong>Contras</strong>: Ecosistema menor, menos familiar</p>
-<p><strong>Decisão</strong>: <strong>Ky</strong> porque performance importa para dashboards financeiros em tempo real, e a API é na verdade mais limpa que o Axios.</p>
-<h3 id="hospedagem-e-infraestrutura" class="scroll-mt-8 group">
-  Hospedagem e Infraestrutura
-  
-    <a href="#hospedagem-e-infraestrutura"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h3>
-<h4 id="avaliação-de-plataforma" class="scroll-mt-8 group">
-  <strong>Avaliação de Plataforma</strong>
-  
-    <a href="#avalia%c3%a7%c3%a3o-de-plataforma"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h4>
-<h5 id="awsgoogle-cloud" class="scroll-mt-8 group">
-  <strong>AWS/Google Cloud</strong>
-  
-    <a href="#awsgoogle-cloud"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h5>
-<p><strong>Prós</strong>: Escalabilidade infinita, recursos empresariais</p>
-<p><strong>Contras</strong>: Configuração complexa, preços variáveis, exagero para MVP</p>
-<h5 id="vercelnetlify" class="scroll-mt-8 group">
-  <strong>Vercel/Netlify</strong>
-  
-    <a href="#vercelnetlify"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h5>
-<p><strong>Prós</strong>: Deploy simples, ótimo para frontend</p>
-<p><strong>Contras</strong>: Processamento backend limitado, restrições serverless</p>
-<h5 id="digitalocean-app-platform" class="scroll-mt-8 group">
-  <strong>DigitalOcean App Platform</strong>
-  
-    <a href="#digitalocean-app-platform"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h5>
-<p><strong>Prós</strong>: Preços previsíveis, serviços gerenciados, meio-termo perfeito</p>
-<p><strong>Contras</strong>: Menos serviços que AWS, plataforma mais nova</p>
-<p><strong>Decisão</strong>: <strong>DigitalOcean App Platform</strong> oferece o ponto ideal de simplicidade e escalabilidade a $30/mês para nossa stack completa—serviço web, workers, PostgreSQL e Redis.</p>
-<h3 id="a-jornada-de-construir-em-público" class="scroll-mt-8 group">
-  A Jornada de Construir em Público
-  
-    <a href="#a-jornada-de-construir-em-p%c3%bablico"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h3>
-<p>Este é apenas o começo. Estamos construindo Atehra de forma transparente, compartilhando nossas decisões técnicas, desafios e aprendizados ao longo do caminho.</p>
-<h4 id="o-que-vem-a-seguir" class="scroll-mt-8 group">
-  <strong>O que vem a seguir</strong>
-  
-    <a href="#o-que-vem-a-seguir"
+    <a href="#pr%c3%b3ximos-passos"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -961,15 +1111,15 @@
   
 </h4>
 <ul>
-<li>Projetando a arquitetura da aplicação</li>
-<li>Implementando workflows de KYC brasileiros</li>
-<li>Construindo o dashboard do investidor com atualizações em tempo real</li>
-<li>Integrando Stripe Connect para divisão de receita</li>
+<li>Arquitetura da aplicação</li>
+<li>Workflows de KYC brasileiros</li>
+<li>Dashboard real-time pra investidores</li>
+<li>Integração Stripe Connect</li>
 </ul>
-<h4 id="por-que-compartilhar-isso" class="scroll-mt-8 group">
-  <strong>Por que compartilhar isso</strong>
+<h4 id="por-que-compartilhar" class="scroll-mt-8 group">
+  <strong>Por que compartilhar?</strong>
   
-    <a href="#por-que-compartilhar-isso"
+    <a href="#por-que-compartilhar"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -991,11 +1141,70 @@
     </a>
   
 </h4>
-<p>O ecosistema fintech brasileiro está evoluindo rapidamente, e acreditamos em contribuir de volta para a comunidade. Seja você construindo plataformas similares, avaliando escolhas tecnológicas, ou apenas curioso sobre desenvolvimento fintech—nossa jornada pode fornecer insights úteis.</p>
-<p>Cada decisão acima foi impulsionada pelas restrições específicas de construir uma plataforma financeira regulamentada no Brasil, equilibrando desenvolvimento rápido de MVP com requisitos de escalabilidade a longo prazo.</p>
+<p>O ecossistema fintech brasileiro tá evoluindo rapidamente. Se você tá construindo algo similar, avaliando tecnologias, ou só tem curiosidade sobre fintech development, nossa jornada pode ajudar.</p>
+<p><img src="/images/techAn.webp" alt="tech"></p>
 <hr>
-<p><em>Acompanhe nossa jornada enquanto construímos Atehra do zero.</em></p>
+<h3 id="notas" class="scroll-mt-8 group">
+  Notas
+  
+    <a href="#notas"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
 
+    </a>
+  
+</h3>
+<p>Nas últimas semanas, tenho lido muito o conteúdo do <a href="https://fidelissauro.dev">Matheus Fidelis</a>, um Site Reliability Engineer brasileiro que trabalhou em algumas das maiores empresas do mercado brasileiro, o cara é sinistro. E o blog dele é uma mina de ouro para insights de system design, infraestrutura e escalabilidade.</p>
+<p>Como alguém navegando pelas complexidades das decisões de infraestrutura que uma fintech enfrenta, os insights dele sobre arquitetura de soluções e melhores práticas têm sido incrivelmente úteis. Se você curte system design, arquitetura cloud, ou só quer aprender com alguém que já passou por sistemas de alta escala no tech brasileiro, definitivamente confere o blog dele em <a href="https://fidelissauro.dev">fidelissauro.dev</a>.</p>
+<hr>
+<h3 id="redes-sociais" class="scroll-mt-8 group">
+  Redes Sociais
+  
+    <a href="#redes-sociais"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<p>Build in public significa construir junto com a comunidade. Se você curte fintech, decisões de arquitetura de startup, ou só quer acompanhar enquanto construímos isso do zero:</p>
+<ul>
+<li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/martin-fantinelli/">martin-fantinelli</a></li>
+<li><strong>X/Twitter</strong>: <a href="https://x.com/martinfantineli">@martinfantineli</a></li>
+<li><strong>Instagram</strong>: <a href="https://www.instagram.com/martinfantinelli">@martinfantinelli</a></li>
+</ul>
+<p>Dúvidas, feedback, ou só quer trocar uma ideia sobre arquitetura fintech? Chama em qualquer plataforma. Sinceramente, não tem nada demais nas minhas redes sociais, ainda sou meio lowprofile 😅.</p>
+<hr>
   </article>
     <aside class="not-prose flex flex-col space-y-8 border-t pt-6">
     <section class="flex flex-col space-y-4" aria-hidden="true">
